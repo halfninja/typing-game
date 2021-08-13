@@ -1,6 +1,8 @@
 html {
     background-color: black;
     font-family: 'Comic Sans MS';
+
+    --button-size: 3rem;
 }
 
 html, body {
@@ -41,8 +43,8 @@ html, body {
 }
 
 #emoji-selector button {
-    width: 5rem;
-    height: 5rem;
+    width: var(--button-size);
+    height: var(--button-size);
     font-size: 2rem;
     background: transparent;
     border: none;
