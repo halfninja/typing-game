@@ -1,0 +1,49 @@
+html {
+    background-color: black;
+    font-family: 'Comic Sans MS';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#typing-zone {
+    padding: 1rem;
+    flex: 1;
+    font-size: 6vw;
+    color: yellow;
+    /* text-shadow: 
+        2px 2px crimson, 
+        -2px -2px crimson,
+        2px -2px crimson,
+        -2px 2px crimson; */
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+#typing-zone:focus {
+    outline: none;
+    border: none;
+    caret-color: violet;
+}
+
+#emoji-selector {
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    width: 22rem;
+}
+
+#emoji-selector button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+}
